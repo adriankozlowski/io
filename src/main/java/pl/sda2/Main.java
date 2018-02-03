@@ -1,5 +1,7 @@
 package pl.sda2;
 
+import pl.sda.Dog;
+
 import java.io.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -8,6 +10,9 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
+        Dog dog = new Dog();
+        dog.doSth();
+
         File file = new File("myFile.ext");
         System.out.println(file.getAbsolutePath());
         if (file.exists()) {
